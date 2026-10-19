@@ -1,0 +1,43 @@
+{
+ "module": "configstringconvert",
+ "original_sha256": "ea35e7cad99a5c0c33ffa4e1ab0ca7929ea51a06e12702738aa61921f030e830",
+ "compile_flag_sets": {
+  "nogs_ehsc": [
+   "/nologo",
+   "/c",
+   "/O2",
+   "/Ob1",
+   "/GF",
+   "/Gy",
+   "/MT",
+   "/DWIN32",
+   "/DNDEBUG",
+   "/D_WINDOWS",
+   "/D_USRDLL",
+   "/EHsc"
+  ]
+ },
+ "translation_units": [
+  {
+   "source": "src/deffiles/configstringconvert/stdafx.cpp",
+   "obj": "stdafx.obj",
+   "flags": "nogs_ehsc"
+  },
+  {
+   "source": "src/deffiles/configstringconvert/configstringconvert.cpp",
+   "obj": "configstringconvert.obj",
+   "flags": "nogs_ehsc"
+  }
+ ],
+ "link_flags": [
+  "/nologo",
+  "/DLL",
+  "/BASE:0x10000000"
+ ],
+ "link_libraries": [
+  "kernel32.lib"
+ ],
+ "stamp": {
+  "timestamp": 1057860805
+ }
+}

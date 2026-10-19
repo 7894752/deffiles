@@ -1,0 +1,220 @@
+{
+ "module": "xmodel",
+ "original_sha256": "b06fac3294b43c3abec172c69018ceac033d5d43db8d7d80add58cb92afcfe6e",
+ "compile_flag_sets": {
+  "gs_ehsc": [
+   "/nologo",
+   "/c",
+   "/O2",
+   "/Ob1",
+   "/GF",
+   "/Gy",
+   "/MT",
+   "/DWIN32",
+   "/DNDEBUG",
+   "/D_WINDOWS",
+   "/D_USRDLL",
+   "/GS",
+   "/EHsc"
+  ],
+  "gs_oyoff": [
+   "/nologo",
+   "/c",
+   "/O2",
+   "/Ob1",
+   "/GF",
+   "/Gy",
+   "/MT",
+   "/DWIN32",
+   "/DNDEBUG",
+   "/D_WINDOWS",
+   "/D_USRDLL",
+   "/GS",
+   "/Oy-"
+  ],
+  "nogs": [
+   "/nologo",
+   "/c",
+   "/O2",
+   "/Ob1",
+   "/GF",
+   "/Gy",
+   "/MT",
+   "/DWIN32",
+   "/DNDEBUG",
+   "/D_WINDOWS",
+   "/D_USRDLL"
+  ],
+  "nogs_ehsc_oyoff": [
+   "/nologo",
+   "/c",
+   "/O2",
+   "/Ob1",
+   "/GF",
+   "/Gy",
+   "/MT",
+   "/DWIN32",
+   "/DNDEBUG",
+   "/D_WINDOWS",
+   "/D_USRDLL",
+   "/EHsc",
+   "/Oy-"
+  ],
+  "nogs_ehsc_yx": [
+   "/nologo",
+   "/c",
+   "/O2",
+   "/Ob1",
+   "/GF",
+   "/Gy",
+   "/MT",
+   "/DWIN32",
+   "/DNDEBUG",
+   "/D_WINDOWS",
+   "/D_USRDLL",
+   "/EHsc",
+   "/YX"
+  ],
+  "nogs_oyoff": [
+   "/nologo",
+   "/c",
+   "/O2",
+   "/Ob1",
+   "/GF",
+   "/Gy",
+   "/MT",
+   "/DWIN32",
+   "/DNDEBUG",
+   "/D_WINDOWS",
+   "/D_USRDLL",
+   "/Oy-"
+  ],
+  "nogs_oyoff_cpp": [
+   "/nologo",
+   "/c",
+   "/O2",
+   "/Ob1",
+   "/GF",
+   "/Gy",
+   "/MT",
+   "/DWIN32",
+   "/DNDEBUG",
+   "/D_WINDOWS",
+   "/D_USRDLL",
+   "/Oy-",
+   "/TP"
+  ],
+  "nogs_ehsc": [
+   "/nologo",
+   "/c",
+   "/O2",
+   "/Ob1",
+   "/GF",
+   "/Gy",
+   "/MT",
+   "/DWIN32",
+   "/DNDEBUG",
+   "/D_WINDOWS",
+   "/D_USRDLL",
+   "/EHsc"
+  ]
+ },
+ "translation_units": [
+  {
+   "source": "src/deffiles/aitype/stdafx.cpp",
+   "obj": "stdafx.obj",
+   "flags": "nogs_ehsc_oyoff"
+  },
+  {
+   "source": "src/deffiles/xmodel/animation.cpp",
+   "obj": "animation.obj",
+   "flags": "nogs_oyoff"
+  },
+  {
+   "source": "src/deffiles/shared/assertive.cpp",
+   "obj": "assertive.obj",
+   "flags": "nogs_ehsc_oyoff"
+  },
+  {
+   "source": "src/deffiles/xmodel/buildmds.cpp",
+   "obj": "buildmds.obj",
+   "flags": "nogs_ehsc_oyoff"
+  },
+  {
+   "source": "src/deffiles/shared/cmdlib.cpp",
+   "obj": "cmdlib.obj",
+   "flags": "nogs_ehsc_oyoff"
+  },
+  {
+   "source": "src/deffiles/shared/com_math.c",
+   "obj": "com_math.obj",
+   "flags": "nogs_oyoff"
+  },
+  {
+   "source": "src/q3map/tristrip_nv.cpp",
+   "obj": "tristrip_nv.obj",
+   "flags": "gs_ehsc"
+  },
+  {
+   "source": "src/deffiles/xmodel/q_parse.c",
+   "obj": "q_parse.obj",
+   "flags": "nogs_oyoff"
+  },
+  {
+   "source": "src/deffiles/shared/q_shared.c",
+   "obj": "q_shared.obj",
+   "flags": "nogs_oyoff",
+   "compile_path": "\\trees\\mksrc\\src\\universal\\q_shared.c"
+  },
+  {
+   "source": "src/deffiles/shared/script.cpp",
+   "obj": "script.obj",
+   "flags": "nogs_ehsc_oyoff"
+  },
+  {
+   "source": "src/deffiles/xmodel/surfaceflags.c",
+   "obj": "surfaceflags.obj",
+   "flags": "nogs_oyoff"
+  },
+  {
+   "source": "src/deffiles/xmodel/tangentspace.cpp",
+   "obj": "tangentspace.obj",
+   "flags": "nogs_oyoff"
+  },
+  {
+   "source": "src/deffiles/xmodel/xmodelconverter.cpp",
+   "obj": "xmodelconverter.obj",
+   "flags": "nogs_ehsc_oyoff"
+  },
+  {
+   "source": "src/libs/nvtristrip/NvTriStripObjects.cpp",
+   "obj": "NvTriStripObjects.obj",
+   "flags": "nogs_ehsc_yx"
+  },
+  {
+   "source": "src/libs/nvtristrip/NvTriStrip.cpp",
+   "obj": "NvTriStrip.obj",
+   "flags": "nogs_ehsc_yx"
+  }
+ ],
+ "link_flags": [
+  "/nologo",
+  "/DLL",
+  "/BASE:0x10000000"
+ ],
+ "link_libraries": [
+  "kernel32.lib",
+  "user32.lib",
+  "gdi32.lib",
+  "@nvtristrip"
+ ],
+ "stamp": {
+  "timestamp": 1067040080
+ },
+ "static_libraries": {
+  "nvtristrip": [
+   "NvTriStrip.obj",
+   "NvTriStripObjects.obj"
+  ]
+ }
+}

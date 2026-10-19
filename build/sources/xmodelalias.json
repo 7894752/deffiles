@@ -1,0 +1,51 @@
+{
+ "module": "xmodelalias",
+ "original_sha256": "f49ada71d86c53f900beaa16660759151cec2506e07bd888947f727ad122d690",
+ "compile_flag_sets": {
+  "nogs_ehsc_oyoff": [
+   "/nologo",
+   "/c",
+   "/O2",
+   "/Ob1",
+   "/GF",
+   "/Gy",
+   "/MT",
+   "/DWIN32",
+   "/DNDEBUG",
+   "/D_WINDOWS",
+   "/D_USRDLL",
+   "/EHsc",
+   "/Oy-"
+  ]
+ },
+ "translation_units": [
+  {
+   "source": "src/deffiles/xmodelalias/stdafx.cpp",
+   "obj": "stdafx.obj",
+   "flags": "nogs_ehsc_oyoff"
+  },
+  {
+   "source": "src/deffiles/shared/assertive.cpp",
+   "obj": "assertive.obj",
+   "flags": "nogs_ehsc_oyoff"
+  },
+  {
+   "source": "src/deffiles/xmodelalias/xmodelalias.cpp",
+   "obj": "xmodelalias.obj",
+   "flags": "nogs_ehsc_oyoff"
+  }
+ ],
+ "link_flags": [
+  "/nologo",
+  "/DLL",
+  "/BASE:0x10000000"
+ ],
+ "link_libraries": [
+  "kernel32.lib",
+  "user32.lib",
+  "gdi32.lib"
+ ],
+ "stamp": {
+  "timestamp": 1057860878
+ }
+}

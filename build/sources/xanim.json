@@ -1,0 +1,106 @@
+{
+ "module": "xanim",
+ "original_sha256": "42e50e7951c505ce3c037b7990642a4bd8ff07fc3499515b42bb4ecebc41321e",
+ "compile_flag_sets": {
+  "nogs_ehsc_oyoff": [
+   "/nologo",
+   "/c",
+   "/O2",
+   "/Ob1",
+   "/GF",
+   "/Gy",
+   "/MT",
+   "/DWIN32",
+   "/DNDEBUG",
+   "/D_WINDOWS",
+   "/D_USRDLL",
+   "/EHsc",
+   "/Oy-"
+  ],
+  "nogs_oyoff": [
+   "/nologo",
+   "/c",
+   "/O2",
+   "/Ob1",
+   "/GF",
+   "/Gy",
+   "/MT",
+   "/DWIN32",
+   "/DNDEBUG",
+   "/D_WINDOWS",
+   "/D_USRDLL",
+   "/Oy-"
+  ]
+ },
+ "translation_units": [
+  {
+   "source": "src/deffiles/xanim/stdafx.cpp",
+   "obj": "stdafx.obj",
+   "flags": "nogs_ehsc_oyoff"
+  },
+  {
+   "source": "src/deffiles/xanim/animation.cpp",
+   "obj": "animation.obj",
+   "flags": "nogs_oyoff"
+  },
+  {
+   "source": "src/deffiles/shared/assertive.cpp",
+   "obj": "assertive.obj",
+   "flags": "nogs_ehsc_oyoff"
+  },
+  {
+   "source": "src/deffiles/xanim/buildmds.cpp",
+   "obj": "buildmds.obj",
+   "flags": "nogs_ehsc_oyoff"
+  },
+  {
+   "source": "src/deffiles/shared/cmdlib.cpp",
+   "obj": "cmdlib.obj",
+   "flags": "nogs_ehsc_oyoff"
+  },
+  {
+   "source": "src/deffiles/shared/com_math.c",
+   "obj": "com_math.obj",
+   "flags": "nogs_oyoff"
+  },
+  {
+   "source": "src/deffiles/xanim/q_parse.c",
+   "obj": "q_parse.obj",
+   "flags": "nogs_oyoff"
+  },
+  {
+   "source": "src/deffiles/shared/q_shared.c",
+   "obj": "q_shared.obj",
+   "flags": "nogs_oyoff",
+   "compile_path": "\\trees\\mksrc\\src\\universal\\q_shared.c"
+  },
+  {
+   "source": "src/deffiles/shared/script.cpp",
+   "obj": "script.obj",
+   "flags": "nogs_oyoff"
+  },
+  {
+   "source": "src/deffiles/shared/tangentspace.cpp",
+   "obj": "tangentspace.obj",
+   "flags": "nogs_oyoff"
+  },
+  {
+   "source": "src/deffiles/xanim/xanimconverter.cpp",
+   "obj": "xanimconverter.obj",
+   "flags": "nogs_ehsc_oyoff"
+  }
+ ],
+ "link_flags": [
+  "/nologo",
+  "/DLL",
+  "/BASE:0x10000000"
+ ],
+ "link_libraries": [
+  "kernel32.lib",
+  "user32.lib",
+  "gdi32.lib"
+ ],
+ "stamp": {
+  "timestamp": 1064429276
+ }
+}

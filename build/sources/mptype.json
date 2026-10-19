@@ -1,0 +1,51 @@
+{
+ "module": "mptype",
+ "original_sha256": "cd7aa4bfa6bcad2bfdec7f2025cc3fc80521890878af8b8446f714140adc7265",
+ "compile_flag_sets": {
+  "nogs_ehsc_oyoff": [
+   "/nologo",
+   "/c",
+   "/O2",
+   "/Ob1",
+   "/GF",
+   "/Gy",
+   "/MT",
+   "/DWIN32",
+   "/DNDEBUG",
+   "/D_WINDOWS",
+   "/D_USRDLL",
+   "/EHsc",
+   "/Oy-"
+  ]
+ },
+ "translation_units": [
+  {
+   "source": "src/deffiles/mptype/stdafx.cpp",
+   "obj": "stdafx.obj",
+   "flags": "nogs_ehsc_oyoff"
+  },
+  {
+   "source": "src/deffiles/mptype/mptype.cpp",
+   "obj": "mptype.obj",
+   "flags": "nogs_ehsc_oyoff"
+  },
+  {
+   "source": "src/deffiles/shared/assertive.cpp",
+   "obj": "assertive.obj",
+   "flags": "nogs_ehsc_oyoff"
+  }
+ ],
+ "link_flags": [
+  "/nologo",
+  "/DLL",
+  "/BASE:0x10000000"
+ ],
+ "link_libraries": [
+  "kernel32.lib",
+  "user32.lib",
+  "gdi32.lib"
+ ],
+ "stamp": {
+  "timestamp": 1058563502
+ }
+}
